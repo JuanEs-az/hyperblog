@@ -1,3 +1,35 @@
+@keyframes backgroundrainbow{
+    0%{
+        background-color: red;
+    }
+    10%{
+        background-color: orange;
+    }
+    20%{
+        background-color: yellow;
+    }
+    30%{
+        background-color: green;
+    }
+    40%{
+        background-color: blue;
+    }
+    60%{
+        background-color: indigo;
+    }
+    70%{
+        background-color: violet;
+    }
+    80%{
+        background-color: pink;
+    }
+    90%{
+        background-color: white;
+    }
+    100%{
+        background-color: red;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -36,4 +68,23 @@
     background-color: blue;
     color: white;
     box-shadow: 12px -12px 10px #333;
+}
+.btn-comenzar{
+    background-color: red;
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px;
+    font-family: Minecraft;
+    animation: backgroundrainbow 10s infinite;
+}
+.btn-comenzar:hover{
+    transform: translateY(-4px);
+    transition: all 0.5s ease;
+}
+.btn-comenzar:not(:hover){
+    transform: translateY(4px);
+    transition: all 0.5s ease;
+    
 }
